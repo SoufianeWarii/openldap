@@ -10,33 +10,27 @@ ldap_server:
 organizational_units:
   - name: SolutionEngineering
     users:
-    - uid: swarii
-      cn: Soufiane Warii
-      mail: swarii@example.org
+    - uid: user1
+      cn: User One
+      mail: user1@example.org
       user_password: secret123!
-    - uid: afantaccione
+    - uid: User Two
       cn: Andrea Fantaccione
-      mail: afantaccione@example.org
+      mail: user2@example.org
       user_password: secret123!
-    - uid: bsemaan
-      cn: Bernard Semaan
-      mail: bsemaan@example.org
-      user_password: secret123!
-    - uid: afantaccione
-      cn: Andrea Fantaccione
-      mail: afantaccione@example.org
+    - uid: user3
+      cn: User Three
+      mail: user3@example.org
       user_password: secret123!
 
 group_of_names:
   - name: demo_lke_admin
     members:
-      - uid: swarii
+      - uid: user1
         ou: "SolutionEngineering"
   - name: demo_lke_user
     members:
-      - uid: afantaccione
+      - uid: user2
         ou: SolutionEngineering
-      - uid: aberni
+      - uid: user3
         ou: Solution Engineering
-      - uid: bsemaan
-        ou: SolutionEngineering
