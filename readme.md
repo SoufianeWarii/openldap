@@ -1,4 +1,4 @@
-# openLdap 
+
 
 This is a guide to configure an openldap environment for testing or demo purpose
 
@@ -6,8 +6,11 @@ The environment will run on docker with the following images:
 
 + openldap
 + phpldapadmin
-+ linkurious
 
+
+## Docker
+
+[docker-compose.yml](docker-compose.yml)
 
 
 
