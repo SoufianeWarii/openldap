@@ -18,22 +18,25 @@ The environment will run on docker with the following images:
 
 This is the tree that will be implemented
 
-+ dc=linkurious,dc=com
-    + ou=people
-        + ou=Solution Engineering
-            + cn=soufiane
-            + cn=fanta
-            + cn=berni
-            + cn=bernard
-        + ou=Customer Sucess
-            + cn=shrada
-            + cn=ganesh
-            + cn=emily
-            + cn=lisa
-            + cn=thibault
++ dc=example,dc=org
+    + ou=Solution Engineering
+        + uid=user1
+        + uid=user2
+        + cn=user3
+    + ou=Customer Sucess
+        + uid=user4
+        + uid=user5
+        + uid=user6
     + ou=groups
-        + cn=LKE_admin
-        + cn=LKE_user
+        + cn=admin
+            + uid=user1     
+        + cn=user
+            + uid=user2
+            + uid=user3    
+        + cn=analyst
+            + uid=user4
+            + uid=user5
+            + uid=user6
 
 ### openldap
 
