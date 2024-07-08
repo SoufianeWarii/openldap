@@ -30,7 +30,7 @@ This is the tree that will be implemented
     + ou=groups
         + cn=admin
             + uid=user1     
-        + cn=user
+        + cn=poweruser
             + uid=user2
             + uid=user3    
         + cn=analyst
