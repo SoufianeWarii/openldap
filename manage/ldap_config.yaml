@@ -24,11 +24,11 @@ organizational_units:
       user_password: secret123!
 
 group_of_names:
-  - name: demo_lke_admin
+  - name: admin
     members:
       - uid: user1
-        ou: "SolutionEngineering"
-  - name: demo_lke_user
+        ou: SolutionEngineering
+  - name: user
     members:
       - uid: user2
         ou: SolutionEngineering
