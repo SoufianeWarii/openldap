@@ -14,8 +14,8 @@ organizational_units:
       cn: User One
       mail: user1@example.org
       user_password: secret123!
-    - uid: User Two
-      cn: Andrea Fantaccione
+    - uid: user2
+      cn: User Two
       mail: user2@example.org
       user_password: secret123!
     - uid: user3
