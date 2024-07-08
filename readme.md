@@ -10,7 +10,7 @@ The environment will run on docker with the following images:
 
 ## Docker
 
-[docker-compose.yml](docker-compose.yml)
+[docker-compose.yaml](docker-compose.yaml)
 
 
 
