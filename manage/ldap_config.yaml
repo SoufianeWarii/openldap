@@ -1,0 +1,42 @@
+---
+ldap_server:
+  host: localhost
+  port: 389
+  https: false
+  domain: dc=example,dc=org
+  admin: admin
+  password: admin
+
+organizational_units:
+  - name: SolutionEngineering
+    users:
+    - uid: swarii
+      cn: Soufiane Warii
+      mail: swarii@example.org
+      user_password: secret123!
+    - uid: afantaccione
+      cn: Andrea Fantaccione
+      mail: afantaccione@example.org
+      user_password: secret123!
+    - uid: bsemaan
+      cn: Bernard Semaan
+      mail: bsemaan@example.org
+      user_password: secret123!
+    - uid: afantaccione
+      cn: Andrea Fantaccione
+      mail: afantaccione@example.org
+      user_password: secret123!
+
+group_of_names:
+  - name: demo_lke_admin
+    members:
+      - uid: swarii
+        ou: "SolutionEngineering"
+  - name: demo_lke_user
+    members:
+      - uid: afantaccione
+        ou: SolutionEngineering
+      - uid: aberni
+        ou: Solution Engineering
+      - uid: bsemaan
+        ou: SolutionEngineering

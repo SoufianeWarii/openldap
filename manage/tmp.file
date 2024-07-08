@@ -1,0 +1,9 @@
+dn: uid=dc=example,dc=org,ou=SolutionEngineering,dc=example,dc=org
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: dc=example,dc=org
+cn: ${CN}
+sn: dc=example,dc=org
+userPassword: ${PASSWORD}

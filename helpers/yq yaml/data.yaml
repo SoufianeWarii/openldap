@@ -1,0 +1,25 @@
+---
+server:
+  host: localhost
+  port: 389
+  admin: cn=admin,dc=example,dc=org
+  password: admin
+
+applications:
+  - name: App1
+    owner: Soufiane
+    location: /path/to/app
+    command: "sh start.sh" 
+  - name: App2
+    owner: Fanta
+    location: /path/to/app
+    command: "sh start.sh" 
+  - name: App3
+    owner: Berni
+    location: /path/to/app
+    command: "sh start.sh" 
+  - name: App4
+    owner: Bernard
+    location: /path/to/app
+    command: "sh start.sh" 
+    

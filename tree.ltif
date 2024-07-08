@@ -1,0 +1,42 @@
+dn: dc=example,dc=com
+objectClass: top
+objectClass: domain
+
+dn: cn=Users,dc=example,dc=com
+objectClass: organizationalUnit
+
+dn: ou=Sales,dc=example,dc=com
+objectClass: organizationalUnit
+
+dn: ou=Engineering,dc=example,dc=com
+objectClass: organizationalUnit
+
+# Define Groups
+dn: cn=sales-group,dc=example,dc=com
+objectClass: groupOfNames
+cn: sales-group
+member: cn=jsmith,ou=Sales,dc=example,dc=com  # jsmith belongs to sales-group
+
+dn: cn=engineering-group,dc=example,dc=com
+objectClass: groupOfNames
+cn: engineering-group
+member: cn=jdoe,ou=Engineering,dc=example,dc=com  # jdoe belongs to engineering-group
+
+# User entries (passwords still omitted)
+dn: cn=jsmith,ou=Sales,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: jsmith
+sn: Smith
+givenname: John
+uid: jsmith
+mail: jsmith@example.com
+
+dn: cn=jdoe,ou=Engineering,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: jdoe
+sn: Doe
+givenname: Jane
+uid: jdoe
+mail: jdoe@example.com
+
+# Add more user entries here following the same format

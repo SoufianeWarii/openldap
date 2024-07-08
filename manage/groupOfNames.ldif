@@ -1,0 +1,7 @@
+dn: cn=MyGroup,ou=MyOrganizationalUnit,dc=mydomain,dc=com
+objectClass: top
+objectClass: groupOfNames
+cn: MyGroup
+member: uid=myuser,ou=MyOrganizationalUnit,dc=mydomain,dc=com
+member: uid=myuser,ou=MyOrganizationalUnit,dc=mydomain,dc=com
+member: uid=myuser,ou=MyOrganizationalUnit,dc=mydomain,dc=com
